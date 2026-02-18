@@ -1,13 +1,182 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
+    <title>html y css </title>
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
 <body>
-    <h3>PAgina inicial</h3>
-    <a href="">link</a>
+    <header class="site-header">
+    <div class="container">
+    
+      <h1>HTML Showcase</h1>
+      <p class="subtitle">
+        Un muestrario de etiquetas HTML
+      </p>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav">
+          <li><a href="#texto">Texto</a></li>
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#tablas">Tablas</a></li>
+          <li><a href="#formularios">Formularios</a></li>
+          <li><a href="#semantica">Semántica</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main  class="container" id="contenido">
+    <section class="card" id="texto">
+      <h2>1. Texto y estructura</h2>
+
+      <article>
+        <h3>Encabezados</h3>
+        <p>Esto es un párrafo con <strong>strong "Letra en negrita"</strong>, <em>em "Letra en cursiva"</em>, <mark>mark "Texto resaltado"</mark>, <u>u "Letra en subrayada"</u> y <code>code "Letra en codificacion"</code>.</p>
+
+        <p>
+          Un enlace: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>.
+          Un <abbr title="HyperText Markup Language">HTML "Sobreponer el cursor para mas informacion</abbr> bien usado es oro".
+        </p>
+
+        <blockquote cite="https://developer.mozilla.org/">
+          “La web se construye mejor cuando el HTML tiene significado.”
+        </blockquote>
+
+        <p>
+          Texto pequeño: <small>Esto es una nota al pie mental "Para letra mas pequeña"</small>
+        </p>
+
+        <p>
+          Superíndice y subíndice: H<sub>2</sub>O y 2<sup>10</sup>.
+        </p>
+
+        <hr />
+        HR es para un salto de linea temático, no para decorar. Si lo usas para decorar, tu yo del futuro te lo va a reclamar.
+        <hr>
+
+        <h3>Detalles expandibles</h3>
+        <details>
+          <summary>Abre para ver un tip</summary>
+          <p>♥ Usa etiquetas semánticas: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>… tu yo del futuro te lo agradece.</p>
+        </details>
+
+        <h3>Preformateado</h3>
+        <pre><code>function holaMundo() {
+        console.log("Hola, GitHub!");}</code>
+        </pre>
+      </article>
+      </section>
+    <section class= "card" id="listas">
+        <h2>2. Listas</h2>
+        <div class="grid">
+            <h3>2.1 Lista desordenada</h3>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </div>
+        <h3>2.2 Lista ordenada</h3>
+        <ol>
+            <li>Clonar repositorio</li>
+            <li>Crear rama</li>
+            <li>Hacer cambios</li>
+            <li>Subir cambios</li>
+        </ol>
+        <div>
+        </div>
+    </section>
+    <section class="card" id="multimedia">
+        <h2>3. Multimedia</h2>
+        <figure>
+            <img src="https://msmk.university/wp-content/uploads/2025/02/Foto25.jpg" alt="Imagen de ejemplo" loading="lazy">
+            <figcaption>Figura con imagen de ejemplo</figcaption>
+        </figure>
+        <p>
+        <button type="button" class="btn">Botón</button>
+        <a class="btn ghost" href="#formularios">Ir a formularios</a>
+      </p>
+
+      <p>
+        También existe <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code>, pero requieren archivos. (No te meto un MP4 aquí para no volver esto una novela).
+      </p>
+    </section>
+
+    <section class="card" id="table">
+
+        <h2>4) Tablas </h2>
+        <table>
+            <caption>Tablas de ejemplo</caption>
+            <thead>
+
+                <tr>
+                    <th scope="col">comando</th>
+                    <th scope="col">que hace?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>git status</code></td>
+                    <td>muestras de cambios pendientes</td>
+                </tr>
+                <tr>
+                    <td><code>git add</code></td>
+                    <td>agrega cambios</td>
+                </tr>
+                <tr>
+                    <td><code>git commit</code></td>
+                    <td>guarda version</td>
+                </tr>
+                <tr>
+                    <td><code>git push</code></td>
+                    <td>sube al repo remoto</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="card" id="formularios">
+
+        <h2>5) formularios</h2>
+        <form action="#" method="post" class="form">
+            <fieldset>
+                <legend>Datos Basicos</legend>
+
+                <label for="">
+                    nombre
+                    <input type="text" name="nombre" placeholder="ingresa tu nombre" required>
+                </label>
+                <label for="">
+                    email
+                    <input type="email" name="email" placeholder="tucorreo@gmail.com" required>
+                </label>
+                <label for="">
+                    contraseña
+                    <input type="password" name="pass" minlength="6">
+                </label>
+                <label for="">
+                    fecha
+                    <input type="date" name="fecha" >
+                </label>
+                <label>
+                    seleccio
+                    <select name="option">
+                        <option value="">elige la opcion</option>
+                        <option>Html</option>
+                        <option>css</option>
+                        <option>git</option>
+                    </select>
+                </label>
+            </fieldset>
+        </form>
+
+
+    </section>
+
+  </main>
+
+
 </body>
 </html>
