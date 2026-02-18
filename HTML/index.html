@@ -1,182 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html y css </title>
+    <title>Gaming Showcase - HTML y CSS</title>
     <link rel="stylesheet" href="../CSS/index.css">
 </head>
 <body>
-    <header class="site-header">
+  <header class="site-header">
     <div class="container">
-    
-      <h1>HTML Showcase</h1>
+      <h1>Gaming Showcase</h1>
       <p class="subtitle">
-        Un muestrario de etiquetas HTML
+        Tu portal de etiquetas y videojuegos
       </p>
 
       <nav aria-label="Navegación principal">
         <ul class="nav">
-          <li><a href="#texto">Texto</a></li>
-          <li><a href="#listas">Listas</a></li>
-          <li><a href="#multimedia">Multimedia</a></li>
-          <li><a href="#tablas">Tablas</a></li>
-          <li><a href="#formularios">Formularios</a></li>
-          <li><a href="#semantica">Semántica</a></li>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#lanzamientos">Lanzamientos</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#rankings">Rankings</a></li>
+          <li><a href="#registro">Registro</a></li>
+          <li><a href="#comunidad">Comunidad</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main  class="container" id="contenido">
-    <section class="card" id="texto">
-      <h2>1. Texto y estructura</h2>
 
+  <main class="container" id="contenido">
+    <section class="card" id="noticias">
+      <h2>1. Últimas Noticias</h2>
       <article>
-        <h3>Encabezados</h3>
-        <p>Esto es un párrafo con <strong>strong "Letra en negrita"</strong>, <em>em "Letra en cursiva"</em>, <mark>mark "Texto resaltado"</mark>, <u>u "Letra en subrayada"</u> y <code>code "Letra en codificacion"</code>.</p>
+        <h3>Parche 1.0.4 en camino</h3>
+        <p>Esto es un avance con <strong>strong "Novedades críticas"</strong>, <em>em "rumores del DLC"</em>, <mark>mark "Beta cerrada"</mark>, <u>u "Subrayado importante"</u> y <code>code "Fix: bug_salto"</code>.</p>
 
         <p>
-          Un enlace: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>.
-          Un <abbr title="HyperText Markup Language">HTML "Sobreponer el cursor para mas informacion</abbr> bien usado es oro".
+          Enlace al foro: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">Wiki de Estrategias</a>.
+          Un <abbr title="Massively Multiplayer Online">MMO</abbr> bien balanceado es una joya.
         </p>
 
         <blockquote cite="https://developer.mozilla.org/">
-          “La web se construye mejor cuando el HTML tiene significado.”
+          “Un juego retrasado eventualmente será bueno, pero un juego apresurado será malo para siempre.”
         </blockquote>
 
         <p>
-          Texto pequeño: <small>Esto es una nota al pie mental "Para letra mas pequeña"</small>
+          Requisitos mínimos: <small>Se requiere conexión a internet para el multijugador.</small>
         </p>
 
         <p>
-          Superíndice y subíndice: H<sub>2</sub>O y 2<sup>10</sup>.
+          Versiones: DirectX<sub>12</sub> y Unreal Engine <sup>5</sup>.
         </p>
 
         <hr />
-        HR es para un salto de linea temático, no para decorar. Si lo usas para decorar, tu yo del futuro te lo va a reclamar.
+        <p>Fin de la noticia destacada.</p>
         <hr>
 
-        <h3>Detalles expandibles</h3>
+        <h3>Tips de Pro-Player</h3>
         <details>
-          <summary>Abre para ver un tip</summary>
-          <p>♥ Usa etiquetas semánticas: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>… tu yo del futuro te lo agradece.</p>
+          <summary>Abre para ver un truco</summary>
+          <p>🎮 Usa el comando <code>/dance</code> para confundir a tus enemigos... o simplemente para celebrar.</p>
         </details>
 
-        <h3>Preformateado</h3>
-        <pre><code>function holaMundo() {
-        console.log("Hola, GitHub!");}</code>
+        <h3>Snippet de Configuración</h3>
+        <pre><code>function loadGame() {
+  console.log("Cargando mundo abierto...");}</code>
         </pre>
       </article>
-      </section>
-    <section class= "card" id="listas">
-        <h2>2. Listas</h2>
+    </section>
+
+    <section class="card" id="lanzamientos">
+        <h2>2. Próximos Lanzamientos</h2>
         <div class="grid">
-            <h3>2.1 Lista desordenada</h3>
+            <h3>2.1 Géneros Populares</h3>
             <ul>
-                <li>Elemento 1</li>
-                <li>Elemento 2</li>
-                <li>Elemento 3</li>
-                <li>Elemento 4</li>
+                <li>Acción / RPG</li>
+                <li>Shooter en primera persona</li>
+                <li>Simulación de carreras</li>
+                <li>Indie de plataformas</li>
             </ul>
         </div>
-        <h3>2.2 Lista ordenada</h3>
+        <h3>2.2 Pasos para Pre-ordenar</h3>
         <ol>
-            <li>Clonar repositorio</li>
-            <li>Crear rama</li>
-            <li>Hacer cambios</li>
-            <li>Subir cambios</li>
+            <li>Crear cuenta de usuario</li>
+            <li>Seleccionar edición (Estándar/Deluxe)</li>
+            <li>Confirmar método de pago</li>
+            <li>Descargar precarga</li>
         </ol>
-        <div>
-        </div>
     </section>
-    <section class="card" id="multimedia">
-        <h2>3. Multimedia</h2>
+
+    <section class="card" id="galeria">
+        <h2>3. Galería de Capturas</h2>
         <figure>
-            <img src="https://msmk.university/wp-content/uploads/2025/02/Foto25.jpg" alt="Imagen de ejemplo" loading="lazy">
-            <figcaption>Figura con imagen de ejemplo</figcaption>
+            <img src="https://i.pinimg.com/736x/f1/73/36/f173365b5aa2e002f68b4436d26ab532.jpg" alt="Imagen de ejemplo" loading="lazy">
+            <figcaption>Concept Art: Paisaje del Reino Perdido</figcaption>
         </figure>
         <p>
-        <button type="button" class="btn">Botón</button>
-        <a class="btn ghost" href="#formularios">Ir a formularios</a>
+        <button type="button" class="btn">Suscribirse</button>
+        <a class="btn ghost" href="#registro">Unirse al Clan</a>
       </p>
 
       <p>
-        También existe <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code>, pero requieren archivos. (No te meto un MP4 aquí para no volver esto una novela).
+        Aquí puedes ver trailers de <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code> de los próximos eventos.
       </p>
     </section>
 
-    <section class="card" id="table">
-
-        <h2>4) Tablas </h2>
+    <section class="card" id="rankings">
+        <h2>4) Top Global de Jugadores</h2>
         <table>
-            <caption>Tablas de ejemplo</caption>
+            <caption>Tabla de Clasificación</caption>
             <thead>
-
                 <tr>
-                    <th scope="col">comando</th>
-                    <th scope="col">que hace?</th>
+                    <th scope="col">Rango</th>
+                    <th scope="col">Jugador (ID)</th>
+                    <th scope="col">Puntaje</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td><code>git status</code></td>
-                    <td>muestras de cambios pendientes</td>
+                    <td><code>#1</code></td>
+                    <td>PixelMaster_99</td>
+                    <td>15,400 pts</td>
                 </tr>
                 <tr>
-                    <td><code>git add</code></td>
-                    <td>agrega cambios</td>
+                    <td><code>#2</code></td>
+                    <td>GamerPro_Arg</td>
+                    <td>14,200 pts</td>
                 </tr>
                 <tr>
-                    <td><code>git commit</code></td>
-                    <td>guarda version</td>
-                </tr>
-                <tr>
-                    <td><code>git push</code></td>
-                    <td>sube al repo remoto</td>
+                    <td><code>#3</code></td>
+                    <td>Coddie_Ninja</td>
+                    <td>12,950 pts</td>
                 </tr>
             </tbody>
         </table>
     </section>
-    <section class="card" id="formularios">
 
-        <h2>5) formularios</h2>
+    <section class="card" id="registro">
+        <h2>5) Crea tu Perfil de Jugador</h2>
         <form action="#" method="post" class="form">
             <fieldset>
-                <legend>Datos Basicos</legend>
+                <legend>Datos de la Cuenta</legend>
 
-                <label for="">
-                    nombre
-                    <input type="text" name="nombre" placeholder="ingresa tu nombre" required>
+                <label>
+                    Nickname
+                    <input type="text" name="nombre" placeholder="Ej: DragonSlayer" required>
                 </label>
-                <label for="">
-                    email
-                    <input type="email" name="email" placeholder="tucorreo@gmail.com" required>
+                <label>
+                    Email de contacto
+                    <input type="email" name="email" placeholder="gamer@correo.com" required>
                 </label>
-                <label for="">
-                    contraseña
+                <label>
+                    Contraseña secreta
                     <input type="password" name="pass" minlength="6">
                 </label>
-                <label for="">
-                    fecha
+                <label>
+                    Fecha de nacimiento
                     <input type="date" name="fecha" >
                 </label>
                 <label>
-                    seleccio
+                    Plataforma favorita
                     <select name="option">
-                        <option value="">elige la opcion</option>
-                        <option>Html</option>
-                        <option>css</option>
-                        <option>git</option>
+                        <option value="">Elige tu consola</option>
+                        <option>PC Master Race</option>
+                        <option>PlayStation 5</option>
+                        <option>Xbox Series X</option>
+                        <option>Nintendo Switch</option>
                     </select>
                 </label>
             </fieldset>
         </form>
+    </section>
 
-
+    <section class="card" id="comunidad">
+        <h2>6) Reglas de la Comunidad</h2>
+        <p>Mantén un ambiente respetuoso, evita el <em>toxic behavior</em> y ¡diviértete!</p>
     </section>
 
   </main>
-
-
 </body>
 </html>
